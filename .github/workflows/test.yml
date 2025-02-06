@@ -1,0 +1,33 @@
+name: Run tests and upload coverage
+
+on:
+    push:
+        branches: main
+
+jobs:
+    test:
+        name: Run tests and collect coverage
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+
+            - name: Set up Node
+              uses: actions/setup-node@v4
+
+            - name: Install dependencies
+              run: pnpm install
+
+            - name: Run tests with coverage
+              run: pnpm test:coverage
+
+            - name: Upload results to Codecov
+              uses: codecov/codecov-action@v5
+              with:
+                  token: ${{ secrets.CODECOV_TOKEN }}
+                  slug: PeraSite/picotx
