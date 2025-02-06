@@ -1,6 +1,11 @@
 # picotx
+![npm package minimized gzipped size](https://img.shields.io/bundlejs/size/%40perasite%2Fpicotx)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/perasite/picotx/test.yml)
+![Codecov](https://img.shields.io/codecov/c/github/PeraSite/picotx)
+![NPM Version](https://img.shields.io/npm/v/%40perasite%2Fpicotx)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-picotx is a minimal TypeScript library for creating atomic transactions for any asynchronous function.
+> A minimal TypeScript library for creating atomic transactions for any asynchronous function.
 
 It simplifies rollback mechanics by automatically or explicitly managing compensation functions, and supports nested transactions and error aggregation.
 
