@@ -2,7 +2,8 @@ name: Build and Publish to npm
 
 on:
     push:
-        branches: main
+        branches:
+          - main
 
 jobs:
     build:
