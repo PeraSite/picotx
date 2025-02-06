@@ -1,0 +1,52 @@
+{
+    "name": "picotx",
+    "type": "module",
+    "version": "0.0.1",
+    "description": "A minimal library to create atomic transaction for any function",
+    "exports": {
+        ".": {
+            "require": {
+                "types": "./dist/index.d.cts",
+                "default": "./dist/index.cjs"
+            },
+            "import": {
+                "types": "./dist/index.d.ts",
+                "default": "./dist/index.js"
+            }
+        }
+    },
+    "author": "PeraSite <pretocki3@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PeraSite/picotx.git"
+    },
+    "files": [
+        "dist"
+    ],
+    "keywords": [
+        "atomic",
+        "transaction",
+        "rollback",
+        "compensation",
+        "typescript"
+    ],
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "scripts": {
+        "test": "vitest run",
+        "test:coverage": "vitest run --coverage",
+        "build": "tsup"
+    },
+    "devDependencies": {
+        "@vitest/coverage-v8": "^3.0.5",
+        "prettier": "^3.4.2",
+        "tsup": "^8.3.5",
+        "tsx": "^4.19.2",
+        "typescript": "^5.7.3",
+        "vite-tsconfig-paths": "^5.1.4",
+        "vitest": "^3.0.5"
+    },
+    "packageManager": "pnpm@9.15.1"
+}
