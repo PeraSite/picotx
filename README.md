@@ -1,8 +1,8 @@
 # picotx
-![npm package minimized gzipped size](https://img.shields.io/bundlejs/size/%40perasite%2Fpicotx)
+![npm package minimized gzipped size](https://img.shields.io/bundlejs/size/picotx)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/perasite/picotx/test.yml)
 ![Codecov](https://img.shields.io/codecov/c/github/PeraSite/picotx)
-![NPM Version](https://img.shields.io/npm/v/%40perasite%2Fpicotx)
+![NPM Version](https://img.shields.io/npm/v/picotx)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > A minimal TypeScript library for creating atomic transactions for any asynchronous function.
